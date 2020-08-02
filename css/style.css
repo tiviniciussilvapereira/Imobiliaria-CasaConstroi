@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*---HEADER---*/
+header{
+    background-color: #ffc74f;
+    padding: 10px 2%;
+}
+
+.header-box{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-1{
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url(../imagens/logo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo-2{
+    float: right;
+    width: 200px;
+    height: 150px;
+    background-image: url(../imagens/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+}
+
+@media screen and (max-width: 510px){
+
+    .logo-1, .logo-2{
+        float: none;
+        display: flex; 
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 2px;
+    }
+}
+/*---FIM HEADER---*/
+
+/*---NAV---*/
+
+nav .nav-box{
+    width: 100%;
+}
+.background-box{
+    max-width: 1200px;
+    height: 720px;
+    margin: 0 auto; 
+    background-image: url(../imagens/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.formulario-box{
+    float: right;
+    width: 400px;
+    height: 700px;
+    background-color: rgba(250, 250, 250, 0.8);
+    margin: 10px 10px;
+}
+.formulario-box h2{
+    background: rgba(110, 110, 110, 0.4);
+    padding: 20px;
+    text-align: left;
+    font-weight: normal;
+}
+
+form .form-box{
+    margin-top: 10px;
+    padding: 15px;
+}
+
+form .form-box p{
+    color: #858585;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-box:not(:first-child){
+    margin-top: 20px;
+}
+
+.form-box:last-child{
+    margin-top: 0;
+    font-size: 25px;
+}
+
+form .form-box input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    padding-left: 10px;
+
+}
+form .form-box input[type=text]:focus{
+    outline: 0;
+}
+form .form-box input[type=submit]{
+    background-color: rgb(255, 199, 79);
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;
+
+}
+.form-box input[type=submit]:hover{
+    background-color: #ffd88f;
+}
+
+@media screen and (max-width: 960px){
+    .formulario-box{
+        float: none;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);     
+    }
+}
+/*---FIM NAV---*/
+
+/*---SECTION---*/
+.section-box{
+    width: 100%;
+    max-width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: rgb(255, 199, 79);
+}
+
+.section-container{
+    text-align: center;
+    padding-top: 70px;
+
+}
+
+.section-container h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.section-container p{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 10px ;
+}
+
+/*---FIM-SECTION---*/
+
+/*---SECTION-MOSAICO---*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-mosaico{
+    display: flex;
+}
+.item-1-mosaico{
+    
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    background-color: #fff3b0;
+    padding: 80px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico h3{
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.item-2-mosaico p{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 960px){
+    .flex-mosaico{
+        display: block;
+    }
+    .item-1-mosaico{
+        width: 100%;
+        padding-top: 60%;
+    }
+    .item-2-mosaico{
+        width: 100%;
+    }
+
+}
+/*---FIM-SECTION-MOSAICO---*/
+
+/*---SECTION-FOOTER---*/
+.section-footer{
+    width: 100%;
+    max-width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: rgb(255, 199, 79);
+}
+/*---FIM-SECTION-MOSAICO---*/
