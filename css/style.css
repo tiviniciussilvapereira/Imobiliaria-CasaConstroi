@@ -197,12 +197,11 @@ form .form-box input[type=submit]{
     display: flex;
 }
 .item-1-mosaico{
-    background-image: url(../imagens/flex1.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 60%;
 }
-
 
 .item-2-mosaico{
     background-color: #fff3b0;
