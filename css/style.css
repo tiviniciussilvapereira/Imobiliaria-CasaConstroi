@@ -60,30 +60,47 @@ header{
 }
 /*---FIM HEADER---*/
 
-/*---NAV---*/
-
-nav .nav-box{
+/*---SLIDER-CONTAINER---*/
+.slider-container{
     width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #ffc74f;
+    max-width: 1200px;
+
 }
+
+.slider{
+    width: 100%;
+    height: inherit;
+    position: relative;
+}
+
+.slider img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .background-box{
+    position: relative;
     max-width: 1200px;
     height: 720px;
     margin: 0 auto; 
-    background-image: url(../imagens/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 .formulario-box{
     float: right;
     width: 400px;
-    height: 700px;
-    background-color: rgba(250, 250, 250, 0.8);
+    height: 600px;
+    background-color: rgba(250, 250, 250, 0.5);
     margin: 10px 10px;
 }
 .formulario-box h2{
-    background: rgba(110, 110, 110, 0.4);
+    background: rgba(169, 236, 91, 0.8);
     padding: 20px;
     text-align: left;
     font-weight: normal;
@@ -95,7 +112,7 @@ form .form-box{
 }
 
 form .form-box p{
-    color: #858585;
+    color: #3b3b3b;
     font-size: 14px;
     margin-bottom: 5px;
 }
@@ -111,7 +128,7 @@ form .form-box p{
 
 form .form-box input[type=text]{
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(43, 43, 43);
     height: 45px;
     line-height: 45px;
     border: none;
@@ -122,7 +139,7 @@ form .form-box input[type=text]:focus{
     outline: 0;
 }
 form .form-box input[type=submit]{
-    background-color: rgb(255, 199, 79);
+    background-color: rgba(169, 236, 91, 0.9);
     text-transform: uppercase;
     color: white;
     width: 100%;
@@ -130,11 +147,11 @@ form .form-box input[type=submit]{
     font-size: 25px;
     cursor: pointer;
     border: none;
-    margin-top: 40px;
+    
 
 }
 .form-box input[type=submit]:hover{
-    background-color: #ffd88f;
+    background-color: rgb(109, 189, 18);
 }
 
 @media screen and (max-width: 960px){
@@ -147,20 +164,20 @@ form .form-box input[type=submit]{
         transform: translate(-50%);     
     }
 }
-/*---FIM NAV---*/
+/*---FIM-SLIDER-CONTAINER---*/
 
 /*---SECTION---*/
 .section-box{
     width: 100%;
     max-width: 1200px;
-    height: 250px;
+    height: 350px;
     margin: 0 auto;
     background-color: rgb(255, 199, 79);
 }
 
-.section-container{
+.section-box > .section-container{
     text-align: center;
-    padding-top: 70px;
+    padding-top: 180px;
 
 }
 
@@ -244,12 +261,16 @@ footer p{
 /*---FIM-SECTION-MOSAICO---*/
 
 /*---SECTION-FOOTER---*/
+.section-footer > .section-container{
+    text-align: center;
+    padding-top: 90px;
+}
 .section-footer{
     width: 100%;
     max-width: 1200px;
     height: 250px;
-    margin: 0 auto;
-    padding-top: 20px;
+    margin:  auto;
+
     background-color: rgb(255, 199, 79);
 }
 /*---FIM-SECTION-FOOTER---*/
